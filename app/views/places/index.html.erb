@@ -27,8 +27,13 @@
         <td><%= place.picture %></td>
         <td><%= place.user_id %></td>
         <td><%= link_to 'Show', place %></td>
-        <td><%= link_to 'Edit', edit_place_path(place) %></td>
-        <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if user_signed_in? %>
+	  <% if current_user.id == place.user_id %>
+
+		<td><%= link_to 'Edit', edit_place_path(place) %></td>
+		<td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	    <% end %>
+	<% end %>
       </tr>
     <% end %>
   </tbody>

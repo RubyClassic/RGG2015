@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   resources :places
   devise_for :users
   root "places#index"
