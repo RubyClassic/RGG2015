@@ -65,6 +65,8 @@ class PlacesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_place
       @place = Place.find(params[:id])
+      @comments = @place.comments.all
+@comment = @place.comments.build
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
