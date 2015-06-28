@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'mini_magick', '3.5.0'
+gem 'carrierwave'
 gem "letsrate", :git => "git://github.com/iammyr/letsrate.git"
 gem 'devise'
 
