@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  letsrate_rater
   has_many :places
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
