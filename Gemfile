@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem "letsrate", :git => "git://github.com/iammyr/letsrate.git"
 gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
