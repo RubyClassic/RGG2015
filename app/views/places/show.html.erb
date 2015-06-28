@@ -1,13 +1,13 @@
 <h3>Places created</h3>
 
 <div class="row">
-  <div class="span9">
+  <div class="span7">
     <%= image_tag(@place.picture_url, :width => 600) if @place.picture.present? %>
 
     <!-- <%= image_tag(@place.picture_url, :width => "100%") if @place.picture.present? %> -->
   </div>
 
-  <div class="span3">
+  <div class="5">
     <p><b>Name: </b><%= @place.name %></p>
 
     <p><b>User Rating as Autism-friendly: </b><%= rating_for @place, "autism_friendly" %></p>
